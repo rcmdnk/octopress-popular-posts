@@ -1,16 +1,15 @@
-require 'jekyll'
-
 module Jekyll
 
   class PopularPosts < Generator
     safe :true
-    priority :low
+    priority :lowest
 
     def generate(site)
       # require octopress-page-view plugin
       if !site.config['page-view']
         return
       end
+      n_posts = site.config['page-view']['n_posts']
 
       popular_posts = site.posts.sort do |px, py|
         if px.data['_pv'] == nil || py.data['_pv'] == nil then 0
