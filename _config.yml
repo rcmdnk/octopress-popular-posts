@@ -1,13 +1,18 @@
-# no special config needed for this plugin, yet you need to set up the
-# octopress-page-view plugin first
-# sample page-view settings
+# page-view settings
 page-view:
-  service_account_email:    
+  service_account_email:
   key_file: privatekey.p12  # service account private key file
   key_secret: notasecret    # service account private key's password
-  profileID:                #ga:XXXXXXXX
-  start: 3 years ago        # Beginning of report
+  profileID:                # ga:XXXXXXXX
+  start:                    # Beginning of report
+    - 1 month ago
+    - 10 years ago
+    - 1 year ago
+    - 1 week ago
+    - 1 day ago
   end: now                  # End of report
   metric: ga:pageviews      # Metric code
   segment: gaid::-1         # all visits
   filters:                  # optional
+  n_posts: 5                # Number of popular posts
+  show_views: false         # If n_views is shown or not

@@ -19,7 +19,7 @@ module Jekyll
         end
       end
 
-      site.config.merge!('popular_posts' => popular_posts)
+      site.config.merge!('popular_posts' => popular_posts[0, n_posts])
     end
   end
 end
