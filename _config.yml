@@ -16,4 +16,4 @@ page-view:
   filters:                  # optional
   n_posts: 5                # Number of popular posts
   show_views: true          # If n_views is shown or not
-  title: Popular Posts (Last Month) # Title of sidebar section
+popular_post_title: Popular Posts (Last Month) # Title of sidebar section
