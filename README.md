@@ -17,6 +17,6 @@ Note:
 
 This plugin needs
 [google/google-api-ruby-client](https://github.com/google/google-api-ruby-client)
-version 0.8.6.
+version 0.9.
 
-The latest version of it is 0.9 and it doesn't have compatibility with 0.8.6.
+The previous version of 0.8.X doesn't have compatibility with 0.9.
