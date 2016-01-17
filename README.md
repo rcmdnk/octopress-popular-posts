@@ -12,3 +12,11 @@ There is another similar plugin [here][pv2]. However, it's based on Google Page 
 [demo]: http://jhshi.me
 [pv]: https://github.com/jhshi/octopress-page-view
 [pv2]: https://github.com/octopress-themes/popular-posts
+
+Note:
+
+This plugin needs
+[google/google-api-ruby-client](https://github.com/google/google-api-ruby-client)
+version 0.8.6.
+
+The latest version of it is 0.9 and it doesn't have compatibility with 0.8.6.
