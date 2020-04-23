@@ -2,6 +2,17 @@
   <h2>{{ site.popular_post_title }}</h2>
   <ul id="popular_posts" class="posts">
     {% for post in site.popular_posts %}
+    {% if forloop.index == 3 and site.adsense_aside_popular %}
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-format="fluid"
+         data-ad-layout-key="-ho-f+t-8a+ir"
+         data-ad-client="ca-pub-{{site.adsense_id}}"
+         data-ad-slot="{{site.adsense_aside_popular}}"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    {% endif %}
     <li class="post index_click_box">
       {% include post/popular_post_list.html%}
     </li>
